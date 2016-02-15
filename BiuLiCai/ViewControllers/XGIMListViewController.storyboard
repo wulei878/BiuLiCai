@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L4I-2q-iQp">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--消息-->
+        <scene sceneID="cX4-Zw-w7t">
+            <objects>
+                <viewController storyboardIdentifier="XGMessageListViewController" id="Ofx-p3-Ohe" customClass="XGMessageListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R3V-ha-Cb8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qhd-Y2-dnl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Toz-se-hKX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="LsB-NX-VpF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="Aa9-DR-8py">
+                                    <rect key="frame" x="0.0" y="77" width="600" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="messageCell" id="FIn-MZ-RrI">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FIn-MZ-RrI" id="f0i-p6-93w">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个股公告" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gH-hP-6AL">
+                                                    <rect key="frame" x="15" y="11" width="60" height="15"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="15"/>
+                                                    <color key="textColor" red="0.17254901959999999" green="0.1647058824" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="委托价格" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqg-ez-g09">
+                                                    <rect key="frame" x="15" y="34" width="48" height="12"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03-18 15:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pju-zv-gg8">
+                                                    <rect key="frame" x="528" y="20" width="57" height="14"/>
+                                                    <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="12"/>
+                                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Uqg-ez-g09" firstAttribute="leading" secondItem="f0i-p6-93w" secondAttribute="leading" constant="15" id="10F-ZU-jkh"/>
+                                                <constraint firstAttribute="centerY" secondItem="Pju-zv-gg8" secondAttribute="centerY" id="2o0-vc-SF9"/>
+                                                <constraint firstAttribute="trailing" secondItem="Pju-zv-gg8" secondAttribute="trailing" constant="15" id="Ebd-1h-PJW"/>
+                                                <constraint firstItem="1gH-hP-6AL" firstAttribute="leading" secondItem="f0i-p6-93w" secondAttribute="leading" constant="15" id="PcE-8x-cKd"/>
+                                                <constraint firstItem="Uqg-ez-g09" firstAttribute="top" secondItem="1gH-hP-6AL" secondAttribute="bottom" constant="8" id="azM-r9-Cjh"/>
+                                                <constraint firstItem="1gH-hP-6AL" firstAttribute="top" secondItem="f0i-p6-93w" secondAttribute="top" constant="11" id="jYN-wN-eVm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ofx-p3-Ohe" id="THq-h5-dgq"/>
+                                    <outlet property="delegate" destination="Ofx-p3-Ohe" id="Ogw-eG-tqh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LsB-NX-VpF" firstAttribute="top" secondItem="R3V-ha-Cb8" secondAttribute="bottom" id="9Kt-JM-r7l"/>
+                            <constraint firstItem="LsB-NX-VpF" firstAttribute="leading" secondItem="Toz-se-hKX" secondAttribute="leading" id="J3E-hv-y8z"/>
+                            <constraint firstItem="Qhd-Y2-dnl" firstAttribute="top" secondItem="LsB-NX-VpF" secondAttribute="bottom" id="TlD-YY-KqP"/>
+                            <constraint firstAttribute="trailing" secondItem="LsB-NX-VpF" secondAttribute="trailing" id="vMT-es-YBJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="消息" id="Csu-aE-wo0">
+                        <barButtonItem key="leftBarButtonItem" image="navigation_back_button" id="ZqI-9w-sNO">
+                            <connections>
+                                <action selector="didTapBackButton:" destination="Ofx-p3-Ohe" id="KPS-8g-ZyL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHI-Bs-87o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="81"/>
+        </scene>
+        <!--客服-->
+        <scene sceneID="vw5-6d-YLQ">
+            <objects>
+                <viewController storyboardIdentifier="XGServiceChatViewController" id="4qm-wW-4uM" customClass="XGServiceChatViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zpP-tt-wCU"/>
+                        <viewControllerLayoutGuide type="bottom" id="chb-p6-WT6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MXA-9d-GSr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="客服" id="cV4-wN-uwF">
+                        <barButtonItem key="leftBarButtonItem" image="navigation_back_button" id="9HF-x3-xiM">
+                            <connections>
+                                <action selector="back:" destination="4qm-wW-4uM" id="em5-XX-5TG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6O-Vq-wSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="-360"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="KjF-nl-7W5">
+            <objects>
+                <viewController storyboardIdentifier="XGIMListViewController" id="L4I-2q-iQp" customClass="XGIMListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e1M-14-vy1"/>
+                        <viewControllerLayoutGuide type="bottom" id="edU-9D-iJY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M5T-Rt-CeO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="消息" id="nws-8W-S3f">
+                        <barButtonItem key="leftBarButtonItem" image="navigation_back_button" id="8N3-Tw-oAk">
+                            <connections>
+                                <action selector="back:" destination="L4I-2q-iQp" id="crO-7l-VWS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JLy-nX-egk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="449.5" y="774.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navigation_back_button" width="12" height="24"/>
+    </resources>
+</document>

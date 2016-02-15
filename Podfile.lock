@@ -1,0 +1,59 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - HPGrowingTextView (1.0.1)
+  - MBProgressHUD (0.9.1)
+  - MD5Digest (0.1.0)
+  - Reachability (3.1.1)
+  - RongCloudIMKit (2.0.3.1)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
+  - SVPullToRefresh (0.4.1)
+  - TTTAttributedLabel (1.13.3)
+  - UMengAnalytics (3.5.8)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.5.2)
+  - HPGrowingTextView (~> 1.0.1)
+  - MBProgressHUD (~> 0.9)
+  - MD5Digest (~> 0.1.0)
+  - Reachability (~> 3.1.1)
+  - RongCloudIMKit
+  - SDWebImage (~> 3.7.2)
+  - SVPullToRefresh (~> 0.4.1)
+  - TTTAttributedLabel (~> 1.13.3)
+  - UMengAnalytics
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  HPGrowingTextView: 7c7488ee3f9a618bf8b56f49cbbbca06eb70aaaf
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MD5Digest: 99bcccfc389c5b7a0edaf66beb80fbc7596a3b65
+  Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
+  RongCloudIMKit: 11d491a13149776a791e7f598c5fd6d73ee4563c
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  TTTAttributedLabel: 6f3174aef8e738f44dff97c2eb7d8184f6ab6277
+  UMengAnalytics: 020551718ba37da017bd85ac4c38ffba2774f3ce
+
+COCOAPODS: 0.37.1

@@ -1,0 +1,40 @@
+//
+//  Use this file to import your target's public headers that you would like to expose to Swift.
+//
+
+#import <AFNetworking/AFNetworking.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "UIView+Additions.h"
+#import "XGGlobalVariables.h"
+#import "XGUserItem.h"
+#import "XGChampionItem.h"
+#import "XGPersonItem.h"
+#import "XGHttpManager+homepage.h"
+#import "XGUtility.h"
+#import "XGStockDetailViewController.h"
+#import "XGRevokeListViewController.h"
+#import "XGMyHomePageViewController.h"
+#import "XGCompeteViewController.h"
+#import "XGCommentViewController.h"
+#import "XGCommentDetailViewController.h"
+#import "XGAddFriendViewController.h"
+#import "XGMyHoldingViewController.h"
+#import "XGStockIncomeViewController.h"
+#import "XGMyCollectionStockViewController.h"
+#import "XGCompeteListViewController.h"
+#import "XGSearchStockViewController.h"
+#import "XGLoginViewController.h"
+#import "UMSocial.h"
+#import "MobClick.h"
+#import "XGIMListViewController.h"
+#import "XGServiceChatViewController.h"
+#import "MBProgressHUD+CommonShow.h"
+#import "SVPullToRefresh.h"
+#import "XGCurrentUserManager.h"
+#import "UMSocialSinaSSOHandler.h"
+#import "XGHomeFriendCell.h"
+#import "XGWeiboFriendItem.h"
+#import "XGHttpManager+stockDetail.h"
+#import "XGStockInfoItem.h"
+#import "XGAccountItem.h"
